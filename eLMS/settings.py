@@ -28,7 +28,7 @@ SECRET_KEY = 'django-insecure-_@876m&g2$*55!90p5cvqfsb)_f07n#33vhp2^3ggabcx#zyjr
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://modules-hazfdo2z6-lalithkumaruppada-gmailcom.vercel.app/', 'modules-hazfdo2z6-lalithkumaruppada-gmailcom.vercel.app']
+ALLOWED_HOSTS = ['*']
 
 
 CSRF_TRUSTED_ORIGINS = [
@@ -99,23 +99,23 @@ WSGI_APPLICATION = 'eLMS.wsgi.application'
 #         'PASSWORD': 'moW5yBQIIfh9YCojc0sG',
 #     }
 # }
-DATABASES = {
-    'default': {
-        #'ENGINE': 'django.db.backends.sqlite3',
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'verceldb',
-        'USER': 'default',
-        'PASSWORD': 'Chq1dz6TeugK',
-        'HOST': 'ep-yellow-voice-868100-pooler.us-east-1.postgres.vercel-storage.com',
-        
-    }
-}
 # DATABASES = {
 #     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
+#         #'ENGINE': 'django.db.backends.sqlite3',
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'verceldb',
+#         'USER': 'default',
+#         'PASSWORD': 'Chq1dz6TeugK',
+#         'HOST': 'ep-yellow-voice-868100-pooler.us-east-1.postgres.vercel-storage.com',
+        
 #     }
 # }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
+}
 
 
 # Password validation

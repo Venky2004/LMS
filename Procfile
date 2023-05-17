@@ -1,1 +1,1 @@
-web: gunicorn eLMS.wsgi --log-file -
+web: gunicorn 'name-of-application.wsgi'
