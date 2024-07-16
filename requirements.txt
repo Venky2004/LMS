@@ -16,4 +16,4 @@ toml==0.10.2
 tzdata==2022.1
 urllib3==1.26.18
 mysqlclient
-setuptools>=65.5.1 # not directly required, pinned by Snyk to avoid a vulnerability
+setuptools>=70.0.0 # not directly required, pinned by Snyk to avoid a vulnerability
